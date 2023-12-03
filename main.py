@@ -1,4 +1,3 @@
-import time
 from http import HTTPStatus
 from random import choice
 
@@ -79,7 +78,6 @@ def get_data_all_categories(session, proxy, categories):
             continue
 
         folder_name = make_folder(category)
-        time.sleep(2)
         for item in items:
             title = item.get("title")
             url = item.get("buyUrl")
